@@ -1,4 +1,13 @@
-﻿namespace Estoque_de_equipamentos
+﻿
+
+
+using System.Resources;
+using System.Windows.Forms;
+
+using Estoque_de_equipamentos.Properties;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace Estoque_de_equipamentos
 {
     partial class Form2
     {
@@ -33,14 +42,14 @@
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.numQuantidade = new System.Windows.Forms.NumericUpDown();
-
+            
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             this.SuspendLayout();
 
             // 
             // btnCadastrarEntrada
-            // 
+            
             this.btnCadastrarEntrada.Location = new System.Drawing.Point(12, 12);
             this.btnCadastrarEntrada.Name = "btnCadastrarEntrada";
             this.btnCadastrarEntrada.Size = new System.Drawing.Size(120, 23);
@@ -60,7 +69,7 @@
 
             // 
             // btnListarProdutos
-            // 
+           
             this.btnListarProdutos.Location = new System.Drawing.Point(12, 70);
             this.btnListarProdutos.Name = "btnListarProdutos";
             this.btnListarProdutos.Size = new System.Drawing.Size(120, 23);
@@ -112,13 +121,12 @@
             this.cmbCategoria.Items.AddRange(new object[] {
                 "Alarme",
                 "CFTV",
-                "Controle de acesso",
+                "Controle de Acesso",
                 "Eletrônico",
                 "Elétrico",
                 "Rede",
                 "Iluminação",
                 "Nobreaks"
-
             });
             this.cmbCategoria.Location = new System.Drawing.Point(12, 156);
             this.cmbCategoria.Name = "cmbCategoria";
@@ -147,9 +155,15 @@
             this.numQuantidade.Size = new System.Drawing.Size(120, 22);
             this.numQuantidade.TabIndex = 8;
 
+
+
+
+
+
             // 
             // Form2
             // 
+          
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtProduto);
             this.Controls.Add(this.txtMarca);
@@ -162,6 +176,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form2";
             this.Text = "Controle de Estoque";
+           
 
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();
